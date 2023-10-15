@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: black;
+}
+.title{
+    text-align: center;
+    margin-top: 50px;
+}
+.border{
+    border-bottom: 2px solid white;
+
+}
+.d-flex{
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input, select{
+    background-color: black;
+    padding: 10px ;
+    border: 1px solid white;
+    border-radius: 7px;
+    font-size: 16px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+.feild{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    text-align: left;
+    margin: 15px 0;
+}
+.row{
+    width: 20%;
+    font-size: 20px;
+}
+.getters{
+    width: 30%;
+    text-align: left;
+    margin-left: 20px;
+}
+.btn{
+    border: 1px solid white;
+    padding: 8px 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 20px 0;
+    cursor: pointer;
+    user-select: none;
+}
+.outputs{
+    width: 60%;
+    margin: auto;
+    margin-top: 70px;
+}
+.task{
+    padding: 10px 0;
+    border: 2px solid rgb(38, 38, 38);
+    border-top: none;
+}
+.height{
+    height: 20px;
+}
+.heading{
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(38, 38, 38);
+    border-radius: 5px 5px 0 0;
+    padding: 15px 10px  ;
+}
+.task div{
+    text-align: center;
+}
+.taskName, .tname{
+    width: 55%;
+}
+.taskDuration, .tduration{
+    width: 10%;
+}
+.lastDate, .tdate{
+    width: 15%;
+}
+.check, .tdone{
+    width: 10%;
+}
+.delete, .tremove{
+    width: 10%;
+}
+.tname{
+    font-size: 20px;
+}
+.time div{
+    color: rgb(160, 160, 160);
+}
+
+/* -------------------------Checkbox-------------------------- */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkmark {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 20px;
+    width: 20px;
+    border: 1px solid white;
+  }
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  .container .checkmark:after {
+    left: 7px;
+    top: 4px;
+    width: 3px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="remixicon/remixicon.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    
+    <h1 class="title"><span class="border">To Do List</span></h1>
+    <div class="inputs">
+        <div class="feild">
+            <h4 class="row">Enter Task </h4>
+            : <input class="getters" type="text" id="task">
+        </div>
+        <div class="feild">
+            <h4 class="row">Select Type </h4>
+            : <select class="getters" id="type">
+                <option value="Personal" id="personal" selected>Personal</option>
+                <option value="Family">Family</option>
+                <option value="Office">Office</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="feild">
+            <h4 class="row">Set Time (hours)</h4>
+            : <input class="getters" type="number" id="hours">
+        </div>
+        <div class="feild">
+            <h4 class="row">Last Date </h4>
+        : <input class="getters" type="date" id="lastDate">
+        </div>
+        <div class="btn" onclick="addTask()">Add Task</div>
+    </div>
+
+    <div class="outputs">
+        <div class="heading d-flex">
+            <h3 class="taskName">Task</h3>
+            <h3 class="taskDuration">Duration</h3>
+            <h3 class="lastDate">Date</h3>
+            <h3 class="check">Done</h3>
+            <h3 class="delete">Delete</h3>
+        </div>
+        <div class="results" id="results">
+            
+        </div>
+    </div>
+
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+
+</html>
